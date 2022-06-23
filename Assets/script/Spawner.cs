@@ -19,6 +19,8 @@ public class Spawner : MonoBehaviour
     public bool stopCounting;
     public bool stopCoroutine = false;
     public bool MouseClicked = false;
+    public bool isstart;
+    private Countdown321go countdown;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,53 +29,60 @@ public class Spawner : MonoBehaviour
         SpawnerPosition[0] = getThePosition("spawnArea1");
         SpawnerPosition[1] = getThePosition("spawnArea2");
         SpawnerPosition[2] = getThePosition("spawnArea3");
+        countdown = GameObject.Find("Canvas").GetComponent<Countdown321go>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Every update find gameObject with tag "Player" and put in Counter[] 
-        GameObject[] Counter = GameObject.FindGameObjectsWithTag("Player");
-        Debug.Log("counter" + Counter);
-        //Process that have to do if u want to use StopSpawner
-        IEnumerator co;
-        co = waitSpawner();
-
-        //In case that Object is destroyed other than by themselves
-        //Stop every process and start spawning agian.
-        if (MouseClicked == true)
+        isstart = countdown.isstart;
+        if (isstart)
         {
-            MouseClicked = false;
-            StopCoroutine(co);
-            StartCoroutine(waitSpawner());
-        }
 
-        //In case that it destroyed themselves.
-        else if (MouseClicked == false)
-        {
-            
-            // In case that there is an object in counter array.
-            if (Counter.Length > 0)
-            {
-                stopspawn = true;
-            }
-            else if (Counter.Length == 0)
-            {
-                stopspawn = false;
-            }
 
-            if (stopCoroutine == false && stopspawn == false)
-            {
+            //Every update find gameObject with tag "Player" and put in Counter[] 
+            GameObject[] Counter = GameObject.FindGameObjectsWithTag("Player");
+            Debug.Log("counter" + Counter);
+            //Process that have to do if u want to use StopSpawner
+            IEnumerator co;
+            co = waitSpawner();
 
-                stopCoroutine = true;
-                
+            //In case that Object is destroyed other than by themselves
+            //Stop every process and start spawning agian.
+            if (MouseClicked == true)
+            {
+                MouseClicked = false;
+                StopCoroutine(co);
                 StartCoroutine(waitSpawner());
-           
             }
-            //stopspawn = true;
-            for (int i = 0; i < Counter.Length; i++)
+
+            //In case that it destroyed themselves.
+            else if (MouseClicked == false)
             {
-                Counter[i] = null;
+
+                // In case that there is an object in counter array.
+                if (Counter.Length > 0)
+                {
+                    stopspawn = true;
+                }
+                else if (Counter.Length == 0)
+                {
+                    stopspawn = false;
+                }
+
+                if (stopCoroutine == false && stopspawn == false)
+                {
+
+                    stopCoroutine = true;
+
+                    StartCoroutine(waitSpawner());
+
+                }
+                //stopspawn = true;
+                for (int i = 0; i < Counter.Length; i++)
+                {
+                    Counter[i] = null;
+                }
             }
         }
 

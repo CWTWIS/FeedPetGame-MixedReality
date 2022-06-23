@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 1223051596984973450}
   - component: {fileID: 6523018245554058532}
   - component: {fileID: 260876873720151890}
-  - component: {fileID: -7782892753821867433}
-  - component: {fileID: -5205807310305711616}
   m_Layer: 0
   m_Name: cat01
   m_TagString: Player
@@ -29,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1995928468850942512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 1346570114241054182}
   m_Father: {fileID: 0}
@@ -48,8 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawner: {fileID: 260876873720151890}
-  scoring: {fileID: -7782892753821867433}
-  timeRecording: {fileID: -5205807310305711616}
+  scoring: {fileID: 0}
+  timeRecording: {fileID: 0}
 --- !u!114 &260876873720151890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,36 +66,7 @@ MonoBehaviour:
   stopCounting: 0
   stopCoroutine: 1
   MouseClicked: 0
---- !u!114 &-7782892753821867433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995928468850942512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fadedfb38db5ea147a44b7729ae3d34f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoring: {fileID: 0}
-  totalScore: 0
---- !u!114 &-5205807310305711616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995928468850942512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 624ff342a53a8b242aa8c06933d6fb57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeleft: 300
-  time_text: {fileID: 0}
   isstart: 0
-  minString: 
 --- !u!1 &7956911967227413423
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +118,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1

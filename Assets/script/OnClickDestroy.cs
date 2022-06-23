@@ -43,7 +43,6 @@ public class OnClickDestroy : MonoBehaviour
         spawner = GameObject.Find("spawner1").GetComponent<Spawner>();
         Destroy(gameObject, DestrotTime);
 
-        Debug.Log(DestrotTime);
     }
     void Update()
     {
@@ -59,7 +58,7 @@ public class OnClickDestroy : MonoBehaviour
     //destroy when collision
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.name != "Sphere")
+        if(collision.collider.tag != "animal" || collision.collider.name != ("cat(clone)"))
         {
             return;
         }
@@ -67,20 +66,27 @@ public class OnClickDestroy : MonoBehaviour
         Debug.Log(collision.collider.name + " + " + gameObject.name);
         //Output the Collider's GameObject's name
         Debug.Log(collision.collider.name);
-        if (gameObject.name == "Pig(Clone)" && collision.collider.name == "Sphere")
+        if (gameObject.name == "dog01(Clone)" && collision.collider.name == "Dog_bone_low_poly")
         {
             scoring.totalScore += 1;
         }
-        else if (gameObject.name == "Rat(Clone)" && collision.collider.name == "Sphere")
+        else if (gameObject.name == "Rat(Clone)" && collision.collider.tag == "food")
         {
             scoring.totalScore -= 1 ;
         }
+        else if (gameObject.name == "bird01(Clone)" && collision.collider.name == "Sunflower_Seed_High_Poly")
+        {
+            scoring.totalScore += 1;
+        }
+        else if (gameObject.name == "cat(Clone)" && collision.collider.name == "Fish")
+        {
+            scoring.totalScore += 1;
+        }
 
-            Debug.Log("colldie");
+        Debug.Log("colldie");
         Destroy(gameObject);
         spawner.MouseClicked = true;
     }
-
 
 
 }
