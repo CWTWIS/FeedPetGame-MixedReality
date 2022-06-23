@@ -7,7 +7,7 @@ public class ManiController : MonoBehaviour
     private GameObject gameObject;
     private bool Manipulate = false;
     public Vector3 OriginalPos;
-
+    public GameObject plate;
     private void Update()
     {
 
@@ -18,9 +18,9 @@ public class ManiController : MonoBehaviour
         if (!Manipulate)
         {
 
-            Vector3 OriginalPos = gameObject.transform.position;
+            OriginalPos = plate.transform.position;
             Manipulate = true;
-            Debug.Log("manipulated = " + Manipulate);
+            
             Debug.Log("OriginalPos = " + OriginalPos);
 
         }
@@ -28,7 +28,8 @@ public class ManiController : MonoBehaviour
 
     public void OnrRelease()
     {
+       
         transform.position = new Vector3(OriginalPos.x, OriginalPos.y, OriginalPos.z);
-        Manipulate = false;
+        Debug.Log("manipulated = " + transform.position);
     }
 }

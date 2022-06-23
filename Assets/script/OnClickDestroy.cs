@@ -58,8 +58,10 @@ public class OnClickDestroy : MonoBehaviour
     //destroy when collision
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.tag != "animal" || collision.collider.name != ("cat(clone)"))
+        Debug.Log("colldie" + gameObject.name);
+        if (collision.collider.tag != "food")
         {
+            Debug.Log("return");
             return;
         }
 
@@ -78,12 +80,11 @@ public class OnClickDestroy : MonoBehaviour
         {
             scoring.totalScore += 1;
         }
-        else if (gameObject.name == "cat(Clone)" && collision.collider.name == "Fish")
+        else if (gameObject.name == "cat01(Clone)" && collision.collider.name == "Fish")
         {
             scoring.totalScore += 1;
         }
 
-        Debug.Log("colldie");
         Destroy(gameObject);
         spawner.MouseClicked = true;
     }
