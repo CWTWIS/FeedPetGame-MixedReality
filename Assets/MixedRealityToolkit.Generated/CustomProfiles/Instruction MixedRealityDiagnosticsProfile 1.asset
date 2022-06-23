@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c2d00f2d26cc124caed106ffbfe3f06, type: 3}
-  m_Name: MRTK_EasyMode MixedRealityDiagnosticsProfile
+  m_Name: Instruction MixedRealityDiagnosticsProfile 1
   m_EditorClassIdentifier: 
   isCustomProfile: 1
-  showDiagnostics: 0
+  showDiagnostics: 1
   showProfiler: 1
   showFrameInfo: 1
   showMemoryStats: 1
