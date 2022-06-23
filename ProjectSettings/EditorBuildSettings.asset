@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Start_Menu.unity
-    guid: e3847f7a01402e34ca243b638786cf70
-  - enabled: 0
-    path: Assets/Scenes/Select_Level.unity
-    guid: 7ce0c11284699a84180603ead49c7cfe
+  - enabled: 1
+    path: Assets/Samples/Mixed Reality Toolkit Foundation/2.8.0/Scene System Resources/DefaultManagerScene.unity
+    guid: ae7bb08d297fb69408695d8de0962524
+  - enabled: 1
+    path: Assets/Scenes/MRTK_Scenes/Summary.unity
+    guid: aac58c05f3e0e27439debddec8fb7439
   - enabled: 1
     path: Assets/Scenes/MRTK_Scenes/MRTK_Main_Menu.unity
     guid: e9ddb40ad32794746bb7b4c08281f2b7
@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MRTK_Scenes/MRTK_Hard_Mode.unity
     guid: f1df781c813b39b418440524bc5172b2
+  - enabled: 1
+    path: Assets/Scenes/Select_Level.unity
+    guid: 7ce0c11284699a84180603ead49c7cfe
+  - enabled: 1
+    path: Assets/Scenes/MRTK_Scenes/MRTK_newEasy.unity
+    guid: 85a03e6c0dc1b2d47ba3bd5ac4a08a9f
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 165c7dafefa5cda49bc08664b3489313, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 0400b09ec68fecf41ab0e9b95c81abee, type: 2}

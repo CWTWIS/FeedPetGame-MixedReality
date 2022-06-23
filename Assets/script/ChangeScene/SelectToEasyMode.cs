@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SelectToEasyMode : MonoBehaviour
 {
+    public int SceneNumber;
     public void GoToEasy()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene(2);
+    }
+
 }

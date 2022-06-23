@@ -5,18 +5,33 @@ using UnityEngine.UI;
 
 public class Scoreing : MonoBehaviour
 {
-    public Text scoring;
-    public int totalScore = 0;
+    static Scoreing score;
+    public Text scoring, Ranking, PtNeed;
+    private string ranking, ptNeed;
+    public int totalScore ,final;
+    public static int finalScore = 0;
+    private int treshold = 10;
     // Start is called before the first frame update
     void Start()
     {
-        scoring = GameObject.Find("scoring").GetComponent<Text>();
+        totalScore = finalScore;
+        score = new Scoreing();
+
+
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("score = "+ totalScore);
+        //totalScore += 1;
+        //Debug.Log("score = "+ totalScore);
         scoring.text = (totalScore.ToString());
+        finalScore = totalScore;
+        final = finalScore;
+
+
     }
+    
 }
