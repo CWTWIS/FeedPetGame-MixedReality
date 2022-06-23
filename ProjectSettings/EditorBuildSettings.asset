@@ -11,16 +11,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Select_Level.unity
     guid: 7ce0c11284699a84180603ead49c7cfe
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MRTK_Scenes/MRTK_Main_Menu.unity
     guid: e9ddb40ad32794746bb7b4c08281f2b7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MRTK_Scenes/MRTK_Select_Level.unity
     guid: 9b0a94c8b2feed848b7fec3bb8084165
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MRTK_Scenes/MRTK_Easy_Mode.unity
     guid: 9f8df0e2a7dcba44c914150332186cdc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MRTK_Scenes/MRTK_Hard_Mode.unity
     guid: f1df781c813b39b418440524bc5172b2
   m_configObjects:
