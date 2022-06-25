@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class Time_recording : MonoBehaviour
+public class Time_recording_Hard : MonoBehaviour
 {
     public float timeleft = 10.00f;
     float oldtime;
@@ -95,7 +95,7 @@ public class Time_recording : MonoBehaviour
           
             //GameController.instance.BeginGame();
             yield return new WaitForSeconds(2f);
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(7);
         }
 
     }
