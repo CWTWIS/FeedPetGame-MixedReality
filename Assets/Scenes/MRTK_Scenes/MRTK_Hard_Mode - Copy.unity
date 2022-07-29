@@ -1679,7 +1679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e268eba5296d2cf49b62ce112d3233af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeleft: 150
+  timeleft: 30
   time_text: {fileID: 598222301}
   isstart: 0
   minString: 
@@ -1717,7 +1717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83d9acc7968244a8886f3af591305bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeProfile: {fileID: 11400000, guid: 31a611a779d3499e8e35f1a2018ca841, type: 2}
+  activeProfile: {fileID: 11400000, guid: 59faf3b4e5ae8c9488e9aae0695ffa57, type: 2}
 --- !u!4 &611092263
 Transform:
   m_ObjectHideFlags: 0
