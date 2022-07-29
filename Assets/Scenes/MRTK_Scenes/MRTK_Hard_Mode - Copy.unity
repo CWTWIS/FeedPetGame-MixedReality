@@ -1445,7 +1445,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523131574}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.08, y: -1.15, z: 22.95}
+  m_LocalPosition: {x: -4.02, y: -1.15, z: 22.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1474041348}
@@ -1557,6 +1557,7 @@ GameObject:
   - component: {fileID: 598222299}
   - component: {fileID: 598222302}
   - component: {fileID: 598222301}
+  - component: {fileID: 598222304}
   - component: {fileID: 598222300}
   - component: {fileID: 598222303}
   m_Layer: 5
@@ -1592,16 +1593,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598222298}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 624ff342a53a8b242aa8c06933d6fb57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  timeleft: 15
-=======
   timeleft: 150
->>>>>>> 231be33f3c0e028509c96ac5b2e3d5e4f09a65e5
   time_text: {fileID: 598222301}
   isstart: 0
   minString: 
@@ -1670,6 +1667,27 @@ MonoBehaviour:
   ConfirmToExit: {fileID: 1499467816}
   time_Recording: {fileID: 598222300}
   countGo: {fileID: 0}
+--- !u!114 &598222304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598222298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e268eba5296d2cf49b62ce112d3233af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeleft: 150
+  time_text: {fileID: 598222301}
+  isstart: 0
+  minString: 
+  slider: {fileID: 1699930584}
+  fillArea: {fileID: 1508524633}
+  countdown: {fileID: 0}
+  Timeup: {fileID: 501641559}
+  buttonControl: {fileID: 0}
 --- !u!1 &611092261
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,11 +2209,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: c790654032b636346b57fc885244fd9c, type: 3}
       propertyPath: m_Name
-      value: plateBone
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: c790654032b636346b57fc885244fd9c, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
+      value: plate
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c790654032b636346b57fc885244fd9c, type: 3}
       propertyPath: m_RootOrder
@@ -2252,10 +2266,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: c790654032b636346b57fc885244fd9c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: c790654032b636346b57fc885244fd9c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c790654032b636346b57fc885244fd9c, type: 3}
@@ -3349,7 +3359,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: c790654032b636346b57fc885244fd9c, type: 3}
       propertyPath: m_Name
-      value: plateSeed
+      value: plate (2)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c790654032b636346b57fc885244fd9c, type: 3}
       propertyPath: m_RootOrder
@@ -3738,8 +3748,6 @@ GameObject:
   - component: {fileID: 1415612871}
   - component: {fileID: 1415612873}
   - component: {fileID: 1415612874}
-  - component: {fileID: 1415612875}
-  - component: {fileID: 1415612876}
   m_Layer: 0
   m_Name: Sunflower_Seed_High_Poly
   m_TagString: food
@@ -3843,34 +3851,10 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1415612875}
-        m_TargetAssemblyTypeName: ManiController, Assembly-CSharp
-        m_MethodName: OnManipulationStarted
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1415612875}
-        m_TargetAssemblyTypeName: ManiController, Assembly-CSharp
-        m_MethodName: OnrRelease
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -3918,36 +3902,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.818898, y: 2.898774, z: 0.96495426}
   m_Center: {x: 0, y: 0.020675486, z: 0}
---- !u!114 &1415612875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415612867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49c2cabe1b74784bb9e5b38d22408db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OriginalPos: {x: 0, y: 0, z: 0}
-  plate: {fileID: 1224167543}
---- !u!54 &1415612876
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415612867}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!1001 &1440281425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5010,10 +4964,10 @@ GameObject:
   - component: {fileID: 1784859752}
   - component: {fileID: 1784859751}
   - component: {fileID: 1784859750}
+  - component: {fileID: 1784859749}
   - component: {fileID: 1784859755}
   - component: {fileID: 1784859754}
   - component: {fileID: 1784859756}
-  - component: {fileID: 1784859749}
   m_Layer: 0
   m_Name: Dog_bone_low_poly
   m_TagString: food
@@ -5042,13 +4996,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784859747}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49c2cabe1b74784bb9e5b38d22408db, type: 3}
+  m_Script: {fileID: 11500000, guid: ca2f7242a1da7e54391ec443bacc1dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OriginalPos: {x: 0, y: 0, z: 0}
-  plate: {fileID: 794310608}
+  item: {fileID: 1784859747}
+  tempParent: {fileID: 0}
+  guide: {fileID: 0}
 --- !u!54 &1784859750
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5188,34 +5143,10 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1784859749}
-        m_TargetAssemblyTypeName: ManiController, Assembly-CSharp
-        m_MethodName: OnManipulationStarted
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1784859749}
-        m_TargetAssemblyTypeName: ManiController, Assembly-CSharp
-        m_MethodName: OnrRelease
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -5791,6 +5722,7 @@ MonoBehaviour:
   - {fileID: 1503180181874650, guid: b3b64fffd0a01784bba52106fbea62f1, type: 3}
   - {fileID: 1010573664472510, guid: 821bdb56c4110c841816df2632335cc6, type: 3}
   - {fileID: 1995928468850942512, guid: 8b99c13241268164a9ee7bfb41295b24, type: 3}
+  - {fileID: 1675308188217246, guid: 3cc9be1e4de713c4192e87916b6bab03, type: 3}
   stop: 0
   stopspawn: 0
   stopCounting: 0
@@ -5835,7 +5767,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940389019}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.45, y: -0.51, z: 19.37}
+  m_LocalPosition: {x: 3.25, y: -0.51, z: 19.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1474041348}

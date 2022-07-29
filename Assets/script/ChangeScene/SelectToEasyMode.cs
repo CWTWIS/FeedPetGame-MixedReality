@@ -6,9 +6,21 @@ using UnityEngine.SceneManagement;
 public class SelectToEasyMode : MonoBehaviour
 {
     public int SceneNumber;
-    public void GoToEasy()
+    public void GoToInstructEasy()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void GoToInstructHardu()
     {
         SceneManager.LoadScene(4);
+    }
+    public void GoToEasy()
+    {
+        SceneManager.LoadScene(3);
+    }
+    public void GoToHard()
+    {
+        SceneManager.LoadScene(5);
     }
     public void GoToMenu()
     {

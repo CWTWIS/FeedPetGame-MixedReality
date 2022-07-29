@@ -551,6 +551,8 @@ GameObject:
   - component: {fileID: 1457461608}
   - component: {fileID: 1457461607}
   - component: {fileID: 1457461606}
+  - component: {fileID: 1457461612}
+  - component: {fileID: 1457461611}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -652,6 +654,31 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.06}
   m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1457461611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457461605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9b89f29824fda740a0a7a8befaf3a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1457461612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457461605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b5b0adcf3e17b14391d6ba7af0b123f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneNumber: 0
 --- !u!1 &1756719275
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,7 +1812,19 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c786ef085bfd755409c87a7eadcbb450, type: 2}
   OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1457461611}
+        m_TargetAssemblyTypeName: MenuToSelect, Assembly-CSharp
+        m_MethodName: GoToSelectLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Events:
   - Event:
       m_PersistentCalls:
@@ -1853,7 +1892,19 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c786ef085bfd755409c87a7eadcbb450, type: 2}
   OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1457461612}
+        m_TargetAssemblyTypeName: SelectToEasyMode, Assembly-CSharp
+        m_MethodName: GoToHard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Events:
   - Event:
       m_PersistentCalls:
