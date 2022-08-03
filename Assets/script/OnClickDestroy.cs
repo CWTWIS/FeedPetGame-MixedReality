@@ -65,10 +65,10 @@ public class OnClickDestroy : MonoBehaviour
             return;
         }
 
-        Debug.Log(collision.collider.name + " + " + gameObject.name);
+
         //Output the Collider's GameObject's name
-        Debug.Log(collision.collider.name);
-        if (gameObject.name == "dog01(Clone)" && collision.collider.name == "Dog_bone_low_poly")
+
+        if (gameObject.name == "Dog(Clone)" && collision.collider.name == "Dog_bone_low_poly")
         {
             scoring.totalScore += 1;
         }
@@ -76,7 +76,7 @@ public class OnClickDestroy : MonoBehaviour
         {
             scoring.totalScore -= 1 ;
         }
-        else if (gameObject.name == "bird01(Clone)" && collision.collider.name == "Sunflower_Seed_High_Poly")
+        else if (gameObject.name == "Crane(Clone)" && collision.collider.name == "Sunflower_Seed_High_Poly")
         {
             scoring.totalScore += 1;
         }

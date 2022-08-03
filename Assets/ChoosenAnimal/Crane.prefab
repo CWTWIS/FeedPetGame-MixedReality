@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 33429257797339874}
   - component: {fileID: 23990906282237678}
   - component: {fileID: -6167712643306929408}
-  - component: {fileID: -3836655648262428569}
   - component: {fileID: 6308300028616671806}
   m_Layer: 0
   m_Name: Crane
-  m_TagString: Player
+  m_TagString: animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,7 +53,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -97,28 +95,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12fe6dea669354c4eb9fa6a42c809551, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner: {fileID: -3836655648262428569}
+  spawner: {fileID: 0}
   scoring: {fileID: 0}
   timeRecording: {fileID: 0}
---- !u!114 &-3836655648262428569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503180181874650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3cafe01e362f046b9f1ecf7b05dad0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemies: []
-  stop: 0
-  stopspawn: 0
-  stopCounting: 0
-  stopCoroutine: 0
-  MouseClicked: 0
-  isstart: 0
 --- !u!135 &6308300028616671806
 SphereCollider:
   m_ObjectHideFlags: 0

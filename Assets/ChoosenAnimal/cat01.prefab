@@ -10,13 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1223051596984973450}
   - component: {fileID: 6523018245554058532}
-  - component: {fileID: 260876873720151890}
   - component: {fileID: -7536761452621189897}
   - component: {fileID: 15670511193298125}
   - component: {fileID: -7267329639221015916}
   m_Layer: 0
   m_Name: cat01
-  m_TagString: Player
+  m_TagString: animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995928468850942512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.82, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 1346570114241054182}
@@ -48,28 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12fe6dea669354c4eb9fa6a42c809551, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner: {fileID: 260876873720151890}
+  spawner: {fileID: 0}
   scoring: {fileID: 0}
   timeRecording: {fileID: 0}
---- !u!114 &260876873720151890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995928468850942512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3cafe01e362f046b9f1ecf7b05dad0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemies: []
-  stop: 0
-  stopspawn: 0
-  stopCounting: 0
-  stopCoroutine: 1
-  MouseClicked: 0
-  isstart: 0
 --- !u!136 &-7536761452621189897
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -80,10 +60,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 12.496753
-  m_Height: 55.605255
+  m_Radius: 25.487556
+  m_Height: 54.01527
   m_Direction: 1
-  m_Center: {x: 15.3058815, y: 13.215454, z: 4.379382}
+  m_Center: {x: -2.7091646, y: 12.4203825, z: 2.1521282}
 --- !u!23 &15670511193298125
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -95,7 +75,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -185,7 +164,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1

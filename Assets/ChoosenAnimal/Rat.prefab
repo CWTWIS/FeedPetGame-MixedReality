@@ -11,12 +11,11 @@ GameObject:
   - component: {fileID: 4531104235746212}
   - component: {fileID: 33539961391598066}
   - component: {fileID: 23840011653650778}
-  - component: {fileID: 8493170477411168078}
   - component: {fileID: -4869244466680191723}
   - component: {fileID: -5103220053765132334}
   m_Layer: 0
   m_Name: Rat
-  m_TagString: Player
+  m_TagString: animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1675308188217246}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1.33}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -54,7 +53,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -85,25 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8493170477411168078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675308188217246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3cafe01e362f046b9f1ecf7b05dad0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemies: []
-  stop: 0
-  stopspawn: 0
-  stopCounting: 0
-  stopCoroutine: 0
-  MouseClicked: 0
-  isstart: 0
 --- !u!114 &-4869244466680191723
 MonoBehaviour:
   m_ObjectHideFlags: 0

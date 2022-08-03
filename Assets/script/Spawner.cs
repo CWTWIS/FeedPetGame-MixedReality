@@ -40,8 +40,8 @@ public class Spawner : MonoBehaviour
         {
 
 
-            //Every update find gameObject with tag "Player" and put in Counter[] 
-            GameObject[] Counter = GameObject.FindGameObjectsWithTag("Player");
+            //Every update find gameObject with tag "animal" and put in Counter[] 
+            GameObject[] Counter = GameObject.FindGameObjectsWithTag("animal");
             Debug.Log("counter" + Counter);
             //Process that have to do if u want to use StopSpawner
             IEnumerator co;
@@ -91,18 +91,18 @@ public class Spawner : MonoBehaviour
     }
     private IEnumerator  waitSpawner()
     {
-        
-        //Debug.Log("spawn 1");
 
+
+        
         randEnemy = Random.Range(0, enemies.Length);
         randSpawn = Random.Range(0, SpawnerPosition.Length);
-
+        Debug.Log("enemies length is " + enemies.Length + " random id is " + randEnemy);
 
         instantiatedObj = (GameObject)Instantiate(enemies[randEnemy], SpawnerPosition[randSpawn] + transform.TransformPoint(0, 0, 0), gameObject.transform.rotation);
 
-        
+        Debug.Log("enemies length is " + enemies.Length);
         yield return new WaitForSeconds(2);
-        //Debug.Log("spawn 5");
+;
         stopCoroutine = false;
         //Destroy(instantiatedObj);
     }
